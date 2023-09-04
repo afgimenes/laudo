@@ -25,5 +25,6 @@ public LaudoService(LaudoRepository documentRepository) {
         document.setData(file.getBytes());
         document.setCreatedAt(LocalDateTime.now());
         return documentRepository.save(document);
+        
     }
 }
